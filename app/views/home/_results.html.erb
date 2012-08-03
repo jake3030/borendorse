@@ -1,0 +1,21 @@
+<% if @zip.blank? %>
+<p>No results for that zip code</p>
+<% else %>
+<h2>Results for <%= @zip.code %></h2>
+<table class="srp_floorplans" cellpadding="0" cellspacing="0">
+  <tbody>
+    <% @zip.endorsed_candidates.sort.each do |k, v| %>
+     <tr class="">
+        <td class="beds position">
+          <%= k %>
+        </td>
+        <td class="baths name">
+          <%= v %>
+        </td>
+      </tr>
+    <% end %>
+
+  </tbody>
+</table>
+
+<% end %>

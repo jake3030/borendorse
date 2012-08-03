@@ -1,0 +1,25 @@
+<section id="content">
+  <div class="title"><h1>Find out who BOR</h1> is endorsing in your neighborhood.</div>
+  <div id="searchbox" class="b-searchbox for_rent">
+    <div class="types">
+
+    </div>
+    <%= form_tag({:controller => "home", :action => "search"}, {:remote => true, :id => "searchbox_form", :name => "searchbox_form"  }) do %>
+
+
+      <p class="main">
+        <input id="searchbox_form_location" name="search" type="text" placeholder="Enter your zip code" value="">
+      </p>
+      <p class="controls">
+        <button class="submit">Search</button>
+      </p>
+     <% end %>
+
+  </div>
+
+  <div id="results">
+
+  </div>
+
+
+</section>
