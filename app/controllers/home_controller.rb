@@ -11,4 +11,11 @@ class HomeController < ApplicationController
       end
     end
   end
+
+
+  def pdf
+    @zip = ZipCode.find_by_code(params[:zip_code])
+    @zip.generate_pdf
+    send_file @zip.pdf_path
+  end
 end
