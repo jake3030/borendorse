@@ -17,7 +17,7 @@ class ZipCode < ActiveRecord::Base
   end
 
   def remove_pdf
-    FileUtils.rm(pdf_path)
+    FileUtils.rm(pdf_path) if File.exists?(pdf_path)
   end
 
   def generate_pdf
