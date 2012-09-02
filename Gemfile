@@ -7,7 +7,7 @@ gem 'rails', '3.2.6'
 
 # gem 'mysql2'
 gem "pg"
-gem "fcgi"
+# gem "fcgi"
 gem 'json'
 # gem "unicorn"
 gem "prawn"
