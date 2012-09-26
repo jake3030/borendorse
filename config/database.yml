@@ -8,6 +8,9 @@
 #
 # And be sure to use new-style password hashing:
 #   http://dev.mysql.com/doc/refman/5.0/en/old-client.html
+#
+#
+# author: Jake Varghese - githb.com/jake3030
 common: &common
   adapter: postgresql
   username: borendorse
